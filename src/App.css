@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+.app {
+  /* background-image: url(/images/mesa1.png); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app.bg1 {
+  background-image: url(/images/mesa1.png);
+}
+
+.app.bg2 {
+  background-image: url(/images/mesa2.png);
+}
+
+.app.bg3 {
+  background-image: url(/images/mesa3.png);
+}
+
+.app.bg4 {
+  background-image: url(/images/mesa4.png);
+}
+
+.bg-imagen__rec {
+  background-image: url(/images/Rectangle1.png);
+  background-position: center;
+  background-repeat: none;
+
+  width: 40rem;
+  height: 16rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  object-fit: cover;
+}
+
+.vector {
+  position: absolute;
+  right: 2rem;
+  top: 10rem;
+  width: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+article {
+  padding: 2.5rem 1rem 1rem;
+}
+
+@media (min-width: 375px) {
+  .app {
+    background-position: 100%;
+  }
+  .bg-imagen__rec {
+    width: 23rem;
+    /* height: 18rem; */
+  }
+  /* .autor {
+    margin-right: 2rem;
+  } */
+}
+
+@media (min-width: 750px) {
+  .bg-imagen__rec {
+    width: 40rem;
+    height: 16rem;
+  }
+}
+
+button {
+  background-color: #ffffffd5;
+  border: none;
+  width: 6rem;
+  height: 1.5rem;
+  border-radius: 5px;
+}
+
+button:hover,
+button:active {
+  background-color: #ebd451de;
+  width: 6.2rem;
+  transition: all 1s ease;
+  box-shadow: 0 0 2px 2px #555555;
+}
+
+h1 {
+  font-size: 36px;
+  color: #f4f4f4;
+  font-weight: 400;
+  line-height: 1.2;
+  text-shadow: 2px 4px 4px #555555;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.autor {
+  /* margin-right: 25rem; */
+  font-size: 16px;
+  font-style: italic;
+  color: #555555;
+}
